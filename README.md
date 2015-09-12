@@ -10,9 +10,11 @@ All of these files are included into project.
 INSTALL:
 
 In your html file add requirements files:
+<code>
 <script src="js/vendor/three.min.js"></script>
 <script src="js/vendor/Projector.js"></script>
 <script src="js/vendor/OrbitControls.js"></script>
+</code>
 library files:
 <script src="js/vendor/pv/i18n.js"></script>
 <script src="js/vendor/pv/ProteinVisualisator.js"></script>
