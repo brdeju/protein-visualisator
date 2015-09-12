@@ -10,19 +10,24 @@ All of these files are included into project.
 INSTALL:
 
 In your html file add requirements files:
-<code>
+```html
 <script src="js/vendor/three.min.js"></script>
 <script src="js/vendor/Projector.js"></script>
 <script src="js/vendor/OrbitControls.js"></script>
-</code>
+```
 library files:
+```html
 <script src="js/vendor/pv/i18n.js"></script>
 <script src="js/vendor/pv/ProteinVisualisator.js"></script>
-
+```
 To initialise library use:
+```javascript
 var pv = ProteinVisualisator.init('div.canvas'); // div.canvas is selector of HTML DOM element div
+```
 To load model from server use:
+```javascript
 pv.loadModel('2POR.pdb'); // 2POR.pdb is PDB formated file on your server
+```
 
 For more information read documentation:
 http://fatcat.ftj.agh.edu.pl/~i0brdej/mgr/doc
