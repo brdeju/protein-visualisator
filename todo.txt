@@ -1,0 +1,26 @@
+TODO:
+
+- auto rotation
+
+
+2. ??? - czy to dobry pomysł ?
+- grupowanie elementów (przechowywać atomy, rozpuszczalniki, hetero atomy, wiązania, itd w osobnych modelach, można wykorzystać przy zmianie metody renderowania, żeby nie renderować wszystkiego tylko usunąć część którą zmienilismy i ją wyrenderować)
+- wykorzystać powyższe w wyświetlaniu/ukrywaniu części modelu (rozpuszczalnika, hetero atomow, itd)
+
+3. ?
+- klikalne atomy (po zaznaczeniu możliwość zmiany koloru dla tego atomu/wszystkich tego samego typu/wszystkich tego samego łańcucha/struktury IIrz/itd)
+- możliwość zmiany kolorów dla typów atomów/struktur/itd
+- kolorowanie po strukturze II: first/last atom kolorować jak mainchain tube nie jak strukturę
+
+
+
+
+
+praca:
+-opis webgl
+-opis threejs
+-opis catmull rom subdivision (algorytm podziały krzywej w celu uzyskania określonej ilości punków najlepiej przybliżających kształt zadanej krzywej)
+-opis rysowania krzywej o przekroju koła
+-opis rysowania beta pasków i alfa helis
+
+

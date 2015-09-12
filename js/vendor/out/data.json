@@ -1,0 +1,1196 @@
+{
+    "project": {},
+    "files": {
+        "pv\\ProteinVisualisator.js": {
+            "name": "pv\\ProteinVisualisator.js",
+            "modules": {
+                "ProteinVisualisator": 1
+            },
+            "classes": {
+                "ProteinVisualisator": 1,
+                "Atom": 1,
+                "Helix": 1,
+                "Turn": 1,
+                "Sheet": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "pv\\i18n.js": {
+            "name": "pv\\i18n.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "OrbitControls.js": {
+            "name": "OrbitControls.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "Projector.js": {
+            "name": "Projector.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "jquery-1.11.2.js": {
+            "name": "jquery-1.11.2.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "ProteinVisualisator": {
+            "name": "ProteinVisualisator",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "ProteinVisualisator": 1,
+                "Atom": 1,
+                "Helix": 1,
+                "Turn": 1,
+                "Sheet": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2725,
+            "description": "ProteinVisualisator, Brdej Grzegorz\nRequirements: ThreeJS r71, Projector, OrbitControls, jQuery v1.11.2, modernizr v2.8.3\nLibrary to create interactive 3-dimensional model of protein molecule. \nAllows for showing protein's model in popular molecules visualisation method such as:\nwireframe, balls & sticks, secondary structures, simplify secondary structures.",
+            "author": "Brdej Grzegorz"
+        }
+    },
+    "classes": {
+        "ProteinVisualisator": {
+            "name": "ProteinVisualisator",
+            "shortname": "ProteinVisualisator",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ProteinVisualisator",
+            "namespace": "",
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 1954,
+            "description": "ProteinVisualisator class"
+        },
+        "Atom": {
+            "name": "Atom",
+            "shortname": "Atom",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ProteinVisualisator",
+            "namespace": "",
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2581,
+            "description": "Class to store atom informations."
+        },
+        "Helix": {
+            "name": "Helix",
+            "shortname": "Helix",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ProteinVisualisator",
+            "namespace": "",
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2642,
+            "description": "Class to store helix informations."
+        },
+        "Turn": {
+            "name": "Turn",
+            "shortname": "Turn",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ProteinVisualisator",
+            "namespace": "",
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2691,
+            "description": "Class to store turns informations."
+        },
+        "Sheet": {
+            "name": "Sheet",
+            "shortname": "Sheet",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ProteinVisualisator",
+            "namespace": "",
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2725,
+            "description": "Class to store beta sheet informations."
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 12,
+            "description": "Property which keeps object of ProteinVisualisator class",
+            "itemtype": "property",
+            "name": "_self",
+            "access": "private",
+            "tagname": "",
+            "type": "ProteinVisualisator",
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 71,
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 122,
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 244,
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 264,
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 296,
+            "description": "Function to parse data in PDB format. \nPDB format structure is described eg. on page: http://www.wwpdb.org/documentation/file-format-content/format33/v3.3.html",
+            "itemtype": "method",
+            "name": "parsePDBFile",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "data String object containing data from loaded file"
+                }
+            ],
+            "return": {
+                "description": "Promise Function returns Promise object cantaining object with data from pdb file divided into properties: \ninfo - information about in file, atoms - object containing Atom objects, sheets - object containing Sheet objects, \nhelixes - object containing Helix objects, turns - object containing Turn objects, subunits - object containing subunit objects"
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 451,
+            "description": "Function to get square distance between two atoms.",
+            "itemtype": "method",
+            "name": "getSquaredDistance",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "Object",
+                    "description": "atom1pos object containing position of first atom in format:",
+                    "type": "X:posX,y:posY,z:posZ"
+                },
+                {
+                    "name": "Object",
+                    "description": "atom2pos object containing position of second atom in format:",
+                    "type": "X:posX,y:posY,z:posZ"
+                }
+            ],
+            "return": {
+                "description": "Float Function returns square distance between two atoms"
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 465,
+            "description": "Function to check if two atoms are connected. It sometimes happend then PDB files do not contain informations about connections between atoms, so such information must be getting in other way.",
+            "itemtype": "method",
+            "name": "checkBond",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "Atom",
+                    "description": "atom1 object of Atom class"
+                },
+                {
+                    "name": "Atom",
+                    "description": "atom2 object of Atom class"
+                }
+            ],
+            "return": {
+                "description": "Integer Function returns 0 when atoms are not connected or 1 when they are"
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 1237,
+            "description": "Function implementing Catmull-Rom subdivide algorithm. This algorithm is used to compute Control Points to draw spline on given points.\nCatmull-Rom subdivide algorithm is described eg. on page: http://www.mvps.org/directx/articles/catmull/",
+            "itemtype": "method",
+            "name": "catmullRomSubdivide",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "Array",
+                    "description": "pointsList array of Atom.pos objects"
+                },
+                {
+                    "name": "Integer",
+                    "description": "segmentsNum number of Control Points computed between two given points"
+                }
+            ],
+            "return": {
+                "description": "Array Function returns array of Control Points"
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 1690,
+            "description": "Function to render scene. It also return render time on javascript console.",
+            "itemtype": "method",
+            "name": "render",
+            "access": "private",
+            "tagname": "",
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 1960,
+            "description": "Function to initialise ProteinVisualisator library object. It calls ProteinVisualisator constructor, check dependencies, initialise resize event handler \nand create ThreeJS objects such as scene, camera, lights, renderer, controls.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "parentSelector html selector to element where ThreeJS renderer should be initialised."
+                },
+                {
+                    "name": "Object",
+                    "description": "attr object containing some of attributes for canvas element, such as: name, id, class"
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 1986,
+            "description": "Function clear protein model. Removes protein data containing in ProteinVisualisator class.",
+            "itemtype": "method",
+            "name": "clearModel",
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 1998,
+            "description": "Function to add handler for changing visualisation method of protein atoms. If first argument is null, this function also creates radio buttons for visualiosation methods.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'},\n               options: {\n                   BALL_AND_STICK: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   ATOM: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   SECENDARY_STRUCT: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   SECENDARY_STRUCT_THIN: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   SECENDARY_STRUCT_CYLINDER: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}}\n               }\n           }",
+            "itemtype": "method",
+            "name": "addChangeVisualisationMethodListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "methodPanel id of DOM element containing radio buttons for visualisation methods. If it is null, function creates radio buttons using second parameter."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create visualisation methods radio buttons."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2040,
+            "description": "Function to add handler for changing coloring method of protein atoms. If first argument is null, this function also creates select options for coloring methods.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'}, \n               select: {\n                   id: 'select_id',\n                   class: 'select_class' \n               },\n               options: {\n                   BY_ATOMS: {render: true|false, id: '', class: '', selected: true|false, text:'label_text'},\n                   BY_SPECTRUM: {render: true|false, id: '', class: '', selected: true|false, text:'label_text'},\n                   BY_POLARITY: {render: true|false, id: '', class: '', selected: true|false, text:'label_text'},\n                   BY_CHAINS: {render: true|false, id: '', class: '', selected: true|false, text:'label_text'},\n                   BY_SEC_STRUCT: {render: true|false, id: '', class: '', selected: true|false, text:'label_text'},\n               }\n           }",
+            "itemtype": "method",
+            "name": "addChangeColoringMethodListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "coloringPanel id of DOM element containing radio buttons for coloring methods. If it is null, function creates radio buttons using second parameter."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create coloring methods radio buttons."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2086,
+            "description": "Function to add handler for changing visualisation method of hetero atoms. If first argument is null, this function also creates radio buttons for visualisation methods.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'}, \n               options: {\n                   BALL_AND_STICK: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   ATOM: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   STICK: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}}\n               }\n           }",
+            "itemtype": "method",
+            "name": "addChangeHeteroatomVisualisationMethodListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "heteroatomMethodPanel id of DOM element containing radio buttons for visualisation methods. If it is null, function creates radio buttons using second parameter."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create visualisation methods radio buttons."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2126,
+            "description": "Function to add handler for changing coloring method of hetero atoms. If first argument is null, this function also creates radio buttons for coloring methods.\nOptions object should have structure like this:\n options = {}",
+            "itemtype": "method",
+            "name": "addChangeColoringHeteroatomMethodListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "coloringPanel id of DOM element containing radio buttons for coloring methods. If it is null, function creates radio buttons using second parameter."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create coloring methods radio buttons."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2155,
+            "description": "Function to add handler for show and hide hetero atoms checkbox. If first argument is null, this function also creates this checkbox.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'},\n               render: true, \n               label: {id:'',class:'',text:'label_text'}, \n               input: {id:'input_id',class:'',name:'input_name'}\n           }",
+            "itemtype": "method",
+            "name": "addShowingHeteroatomListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "showHeteroatom id of DOM element containing show/hide checkbox. If it is null, function creates this checkbox."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create show/hide checkbox."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2193,
+            "description": "Function to add handler for changing visualisation method of solvent atoms. If first argument is null, this function also creates radio buttons for visualisation methods.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'}, \n               options: {\n                   BALL_AND_STICK: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   ATOM: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}}\n               }\n           }",
+            "itemtype": "method",
+            "name": "addChangeSolventVisualisationMethodListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "solventMethodPanel id of DOM element containing radio buttons for visualisation methods. If it is null, function creates radio buttons using second parameter."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create visualisation methods radio buttons."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2232,
+            "description": "Function to add handler for changing coloring method of solvent atoms. If first argument is null, this function also creates radio buttons for coloring methods.\nOptions object should have structure like this:\n options = {}",
+            "itemtype": "method",
+            "name": "addChangeColoringSolventMethodListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "coloringPanel id of DOM element containing radio buttons for coloring methods. If it is null, function creates radio buttons using second parameter."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create coloring methods radio buttons."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2261,
+            "description": "Function to add handler for show and hide solvent atoms checkbox. If first argument is null, this function also creates this checkbox.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'},\n               render: true, \n               label: {id:'',class:'',text:'label_text'}, \n               input: {id:'input_id',class:'',name:'input_name'}\n           }",
+            "itemtype": "method",
+            "name": "addShowingSolventListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "showSolvent id of DOM element containing show/hide checkbox. If it is null, function creates this checkbox."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create show/hide checkbox."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2299,
+            "description": "Function to add handler for changing visualisation method of side chain atoms. If first argument is null, this function also creates radio buttons for visualisation methods.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'}, \n               options: {\n                   BALL_AND_STICK: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}},\n                   STICK: {render: true|false, checked: true|false, label: {id:'',class:'',text:'label_text'}, input: {id:'',class:'',name:'input_name'}}\n               }\n           }",
+            "itemtype": "method",
+            "name": "addChangeSideChainVisualisationMethodListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "sideChainMethodPanel id of DOM element containing radio buttons for visualisation methods. If it is null, function creates radio buttons using second parameter."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create visualisation methods radio buttons."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2338,
+            "description": "Function to add handler for show and hide side chain atoms checkbox. If first argument is null, this function also creates this checkbox.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'},\n               render: true, \n               label: {id:'',class:'',text:'label_text'}, \n               input: {id:'input_id',class:'',name:'input_name'}\n           }",
+            "itemtype": "method",
+            "name": "addShowingSideChainListener",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "showSideChain id of DOM element containing show/hide checkbox. If it is null, function creates this checkbox."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create show/hide checkbox."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2375,
+            "description": "Function to create show/hide DOM checkbox for part of model specify by first argument.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'div_id',class:'div_class'},\n               render: true, \n               label: {id:'',class:'',text:'label_text'}, \n               input: {id:'input_id',class:'',name:'input_name'}\n           }",
+            "itemtype": "method",
+            "name": "createShowButtonControl",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "part name of model's part which should be showing/hiding by this checkbox."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create show/hide checkbox."
+                }
+            ],
+            "return": {
+                "description": "String id of created DOM element"
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2398,
+            "description": "Function to create visualisation method DOM radio buttons for part of model specify by first argument.\nOptions object should have structure like this specified for part for which control panel should be created.",
+            "itemtype": "method",
+            "name": "createVisualisationMethodControl",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "part name of model's part which should be controlled by created panel."
+                },
+                {
+                    "name": "Object",
+                    "description": "options object containing parameters to create control panel."
+                }
+            ],
+            "return": {
+                "description": "String id of created DOM element"
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2429,
+            "description": "Function to load data file located on server.",
+            "itemtype": "method",
+            "name": "loadModel",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "filePath path of file on server"
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2452,
+            "description": "Function to add event to handle load file from user local files. If first argument is null, this function also creates load file html element.\nOptions object should have structure like this:\n options = {\n               parent: 'parent_selector',\n               div: {id:'',class:''},\n               file: {\n                   id: 'file_id',\n                   class: '',\n                   name: 'file_name'\n               }\n           }",
+            "itemtype": "method",
+            "name": "addLoadFilePanel",
+            "params": [
+                {
+                    "name": "String|null",
+                    "description": "filePanel id for html file element, if null this element will be created."
+                },
+                {
+                    "name": "Object",
+                    "description": "options attributes used to create html file element."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2485,
+            "description": "Function to start rendering model. If any options passed it overwrites default ones.",
+            "itemtype": "method",
+            "name": "render",
+            "params": [
+                {
+                    "name": "Object",
+                    "description": "options custom render options, like width and height of canvas."
+                }
+            ],
+            "return": {
+                "description": "ProteinVisualisator Function returns ProteinVisualisator object."
+            },
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2509,
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2533,
+            "description": "Function to handle window resize event. Updates camera data.",
+            "itemtype": "method",
+            "name": "onWindowResize",
+            "params": [
+                {
+                    "name": "Event",
+                    "description": "evt window resize event object"
+                }
+            ],
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2548,
+            "description": "Function to handle file select event. Performs reading loaded file.",
+            "itemtype": "method",
+            "name": "onWindowResize",
+            "params": [
+                {
+                    "name": "Event",
+                    "description": "evt file select event object"
+                }
+            ],
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2564,
+            "description": "Function to handle visualisation method change event. Performs drowing protein models.",
+            "itemtype": "method",
+            "name": "handleVisualisationMethodChange",
+            "params": [
+                {
+                    "name": "Event",
+                    "description": "evt change visualisation method event object"
+                }
+            ],
+            "class": "ProteinVisualisator",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\ProteinVisualisator.js",
+            "line": 2781,
+            "description": "Function to load translated string for given key from internationalisation js files.",
+            "itemtype": "method",
+            "name": "__",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "key key in internationalisation file"
+                },
+                {
+                    "name": "String",
+                    "description": "langiage language in which should be returned string"
+                }
+            ],
+            "return": {
+                "description": "String translated string from internationalisation file"
+            },
+            "class": "Sheet",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "pv\\i18n.js",
+            "line": 1,
+            "description": "ProteinVisualisator (C) Copyright 2015, Brdej Grzegorz\n\nThis library uses:",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "OrbitControls.js",
+            "line": 1,
+            "author": "erich666 / http://erichaines.com",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "Projector.js",
+            "line": 1,
+            "author": "julianwa / https://github.com/julianwa",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "Projector.js",
+            "line": 77,
+            "description": "Translates a 2D point from NDC to a THREE.Ray\nthat can be used for picking.",
+            "vector": "- THREE.Vector3 that represents 2D point",
+            "camera": "- THREE.Camera",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 891,
+            "description": "Create key-value caches of limited size",
+            "return": {
+                "description": "Returns the Object data after storing it on itself with\n\tproperty name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)\n\tdeleting the oldest entry",
+                "type": "Function(string, Object)"
+            },
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 911,
+            "description": "Mark a function for special use by Sizzle",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "The function to mark",
+                    "type": "Function"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 920,
+            "description": "Support testing using an element",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "Passed the created div and expects a boolean result",
+                    "type": "Function"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 941,
+            "description": "Adds the same handler for all of the specified attrs",
+            "params": [
+                {
+                    "name": "attrs",
+                    "description": "Pipe-separated list of attributes",
+                    "type": "String"
+                },
+                {
+                    "name": "handler",
+                    "description": "The method that will be applied",
+                    "type": "Function"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 955,
+            "description": "Checks document order of two siblings",
+            "params": [
+                {
+                    "name": "a",
+                    "description": "",
+                    "type": "Element"
+                },
+                {
+                    "name": "b",
+                    "description": "",
+                    "type": "Element"
+                }
+            ],
+            "return": {
+                "description": "Returns less than 0 if a precedes b, greater than 0 if a follows b",
+                "type": "Number"
+            },
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 984,
+            "description": "Returns a function to use in pseudos for input types",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 995,
+            "description": "Returns a function to use in pseudos for buttons",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 1006,
+            "description": "Returns a function to use in pseudos for positionals",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 1028,
+            "description": "Checks a node for validity as a Sizzle context",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Element|Object="
+                }
+            ],
+            "return": {
+                "description": "The input node if acceptable, otherwise a falsy value",
+                "type": "Element|Object|Boolean"
+            },
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 1040,
+            "description": "Detects XML nodes",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "An element or a document",
+                    "type": "Element|Object"
+                }
+            ],
+            "return": {
+                "description": "True iff elem is a non-HTML XML node",
+                "type": "Boolean"
+            },
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 1052,
+            "description": "Sets document-related variables once based on the current document",
+            "params": [
+                {
+                    "name": "doc",
+                    "description": "An element or document object to use to set the document",
+                    "type": "Element|Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "Returns the current document",
+                "type": "Object"
+            },
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 1494,
+            "description": "Document sorting and removing duplicates",
+            "params": [
+                {
+                    "name": "results",
+                    "description": "",
+                    "type": "ArrayLike"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 1527,
+            "description": "Utility function for retrieving the text value of an array of DOM nodes",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "",
+                    "type": "Array|Element"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 2500,
+            "description": "A low-level selection function that works with Sizzle's compiled\n selector functions",
+            "params": [
+                {
+                    "name": "selector",
+                    "description": "A selector or a pre-compiled\n selector function built with Sizzle.compile",
+                    "type": "String|Function"
+                },
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Element"
+                },
+                {
+                    "name": "results",
+                    "description": "",
+                    "type": "Array",
+                    "optional": true
+                },
+                {
+                    "name": "seed",
+                    "description": "A set of elements to match against",
+                    "type": "Array",
+                    "optional": true
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 3477,
+            "description": "Clean-up method for dom ready events",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 3491,
+            "description": "The ready event handler and self cleanup method",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 3638,
+            "description": "Determines whether an object can have data",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 6025,
+            "description": "Retrieve the actual display of a element",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "nodeName of the element",
+                    "type": "String"
+                },
+                {
+                    "name": "doc",
+                    "description": "Document object",
+                    "type": "Object"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 6049,
+            "description": "Try to determine the default display value of an element",
+            "params": [
+                {
+                    "name": "nodeName",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 9964,
+            "description": "Load a url into a page",
+            "class": "",
+            "module": "ProteinVisualisator"
+        },
+        {
+            "file": "jquery-1.11.2.js",
+            "line": 10049,
+            "description": "Gets a window from an element",
+            "class": "",
+            "module": "ProteinVisualisator"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: vector",
+            "line": " Projector.js:77"
+        },
+        {
+            "message": "unknown tag: camera",
+            "line": " Projector.js:77"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " jquery-1.11.2.js:891"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " jquery-1.11.2.js:955"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " jquery-1.11.2.js:1028"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " jquery-1.11.2.js:1040"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " jquery-1.11.2.js:1052"
+        },
+        {
+            "message": "Missing item type",
+            "line": " pv\\ProteinVisualisator.js:71"
+        },
+        {
+            "message": "Missing item type",
+            "line": " pv\\ProteinVisualisator.js:122"
+        },
+        {
+            "message": "Missing item type",
+            "line": " pv\\ProteinVisualisator.js:244"
+        },
+        {
+            "message": "Missing item type",
+            "line": " pv\\ProteinVisualisator.js:264"
+        },
+        {
+            "message": "Missing item type",
+            "line": " pv\\ProteinVisualisator.js:2509"
+        },
+        {
+            "message": "Missing item type\nProteinVisualisator (C) Copyright 2015, Brdej Grzegorz\n\nThis library uses:",
+            "line": " pv\\i18n.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " OrbitControls.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " Projector.js:1"
+        },
+        {
+            "message": "Missing item type\nTranslates a 2D point from NDC to a THREE.Ray\nthat can be used for picking.",
+            "line": " Projector.js:77"
+        },
+        {
+            "message": "Missing item type\nCreate key-value caches of limited size",
+            "line": " jquery-1.11.2.js:891"
+        },
+        {
+            "message": "Missing item type\nMark a function for special use by Sizzle",
+            "line": " jquery-1.11.2.js:911"
+        },
+        {
+            "message": "Missing item type\nSupport testing using an element",
+            "line": " jquery-1.11.2.js:920"
+        },
+        {
+            "message": "Missing item type\nAdds the same handler for all of the specified attrs",
+            "line": " jquery-1.11.2.js:941"
+        },
+        {
+            "message": "Missing item type\nChecks document order of two siblings",
+            "line": " jquery-1.11.2.js:955"
+        },
+        {
+            "message": "Missing item type\nReturns a function to use in pseudos for input types",
+            "line": " jquery-1.11.2.js:984"
+        },
+        {
+            "message": "Missing item type\nReturns a function to use in pseudos for buttons",
+            "line": " jquery-1.11.2.js:995"
+        },
+        {
+            "message": "Missing item type\nReturns a function to use in pseudos for positionals",
+            "line": " jquery-1.11.2.js:1006"
+        },
+        {
+            "message": "Missing item type\nChecks a node for validity as a Sizzle context",
+            "line": " jquery-1.11.2.js:1028"
+        },
+        {
+            "message": "Missing item type\nDetects XML nodes",
+            "line": " jquery-1.11.2.js:1040"
+        },
+        {
+            "message": "Missing item type\nSets document-related variables once based on the current document",
+            "line": " jquery-1.11.2.js:1052"
+        },
+        {
+            "message": "Missing item type\nDocument sorting and removing duplicates",
+            "line": " jquery-1.11.2.js:1494"
+        },
+        {
+            "message": "Missing item type\nUtility function for retrieving the text value of an array of DOM nodes",
+            "line": " jquery-1.11.2.js:1527"
+        },
+        {
+            "message": "Missing item type\nA low-level selection function that works with Sizzle's compiled\n selector functions",
+            "line": " jquery-1.11.2.js:2500"
+        },
+        {
+            "message": "Missing item type\nClean-up method for dom ready events",
+            "line": " jquery-1.11.2.js:3477"
+        },
+        {
+            "message": "Missing item type\nThe ready event handler and self cleanup method",
+            "line": " jquery-1.11.2.js:3491"
+        },
+        {
+            "message": "Missing item type\nDetermines whether an object can have data",
+            "line": " jquery-1.11.2.js:3638"
+        },
+        {
+            "message": "Missing item type\nRetrieve the actual display of a element",
+            "line": " jquery-1.11.2.js:6025"
+        },
+        {
+            "message": "Missing item type\nTry to determine the default display value of an element",
+            "line": " jquery-1.11.2.js:6049"
+        },
+        {
+            "message": "Missing item type\nLoad a url into a page",
+            "line": " jquery-1.11.2.js:9964"
+        },
+        {
+            "message": "Missing item type\nGets a window from an element",
+            "line": " jquery-1.11.2.js:10049"
+        }
+    ]
+}

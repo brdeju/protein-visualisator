@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>pv\i18n.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Atom.html">Atom</a></li>
+                                <li><a href="../classes/Helix.html">Helix</a></li>
+                                <li><a href="../classes/ProteinVisualisator.html">ProteinVisualisator</a></li>
+                                <li><a href="../classes/Sheet.html">Sheet</a></li>
+                                <li><a href="../classes/Turn.html">Turn</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ProteinVisualisator.html">ProteinVisualisator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: pv\i18n.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * ProteinVisualisator (C) Copyright 2015, Brdej Grzegorz
+ * 
+ * This library uses:
+ *  
+ */
+
+window.i18n = (function () {
+    return {
+        default: {
+            &#x27;label.protein.ball_and_stick&#x27;: &#x27;Kulki i kreski&#x27;,
+            &#x27;label.protein.atom&#x27;: &#x27;Atomy jako sfery&#x27;,
+            &#x27;label.protein.secondary_structure&#x27;: &#x27;Struktury II-rzędowe&#x27;,
+            &#x27;label.protein.secondary_structure_thin&#x27;: &#x27;Struktury II-rzędowe (cieńkie)&#x27;,
+            &#x27;label.protein.secondary_structure_cylinder&#x27;: &#x27;Helisy jako cylindry&#x27;,
+            &#x27;label.protein.stick&#x27;: &#x27;Wiązania&#x27;,
+            &#x27;label.hetatom.ball_and_stick&#x27;: &#x27;Kulki i kreski&#x27;,
+            &#x27;label.hetatom.atom&#x27;: &#x27;Atomy jako sfery&#x27;,
+            &#x27;label.hetatom.stick&#x27;: &#x27;Wiązania&#x27;,
+            &#x27;label.solvent.atom&#x27;: &#x27;Atomy jako sfery&#x27;,
+            &#x27;label.side_chain.ball_and_stick&#x27;: &#x27;Kulki i kreski&#x27;,
+            &#x27;label.side_chain.stick&#x27;: &#x27;Wiązania&#x27;,
+            &#x27;label.hetatom.show&#x27;: &#x27;Pokaż hetero atomy&#x27;,
+            &#x27;label.solvent.show&#x27;: &#x27;Pokaż rozpuszczalnik&#x27;,
+            &#x27;label.side_chain.show&#x27;: &#x27;Pokaż łańcuchy boczne&#x27;,
+            &#x27;label.protein.by_atoms&#x27;: &#x27;Kolorowanie po atomach&#x27;,
+            &#x27;label.protein.by_spectrum&#x27;: &#x27;Kolorowanie po spektrum&#x27;,
+            &#x27;label.protein.by_polarity&#x27;: &#x27;Kolorowanie po polarności&#x27;,
+            &#x27;label.protein.by_chains&#x27;: &#x27;Kolorowanie po łańcuchu&#x27;,
+            &#x27;label.protein.by_sec_struct&#x27;: &#x27;Kolorowanie po strukturach II-rzędowych&#x27;,
+            &#x27;errors.parsing.pdb&#x27;: &#x27;Błąd podczas parsowania pliku pdb&#x27;,
+            &#x27;errors.structure.pdb&#x27;: &#x27;Błędna struktura pliku lub pusty plik&#x27;
+        }
+    };
+}) ();
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
