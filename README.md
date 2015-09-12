@@ -5,6 +5,7 @@ ProteinVisualisator javascript library to create interactive 3-dimensional model
 REQUIREMENTS:
 
 ThreeJS r71, Projector, OrbitControls, jQuery v1.11.2, modernizr v2.8.3
+
 All of these files are included into project.
 
 INSTALL:
