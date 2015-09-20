@@ -17,10 +17,37 @@ TODO:
 
 
 praca:
--opis webgl
--opis threejs
--opis catmull rom subdivision (algorytm podziały krzywej w celu uzyskania określonej ilości punków najlepiej przybliżających kształt zadanej krzywej)
--opis rysowania krzywej o przekroju koła
--opis rysowania beta pasków i alfa helis
+-tytuł: 6
+-wstęp: 0.5(1)
+ *Co? Przedmiot, problem
+ *Jak? (Metoda , krótko)
+ *Dlaczego? Źródła problemu badawczego
+ *Po co? Implikacje, konsekwencje, walory
+ *Co będzie w kolejnych rozdziałach?
+-aminokwasy: 5 -ok
+-białka: 11 -ok
+-format pdb: 1 -ok
+-opis webgl & threejs: 5 -ok
+-wizualizacja przestrzennej struktury białka: 7(+3) 
+ *opis catmull rom subdivision (algorytm podziały krzywej w celu uzyskania określonej ilości punków najlepiej przybliżających kształt zadanej krzywej)
+ *opis rysowania krzywej o przekroju koła !!
+ *opis rysowania beta pasków i alfa helis !!
+-dokumentacja: 5 -ok
+?porównanie z istniejącymi aplikacjami (?3)
+-zakończenie: (3)
+ *przypomnieć cel pracy
+ *jak zostały spełnione wymagania: implikacje, konsekwencje, walory
+ *w jaki sposób zaimplementowana technologia rozwiązuje postawione problemy
+ *czy wszystkie problemy zostały rozwiązane
+ *jakie nie zostały rozwiązane, dlaczego?
+-bibliografia, itd 
+-załączniki
 
+58 + (7-10)
+
+
+Do zrobienia:
+zakończenie(3),wstęp(1)
+
+rysowanie trójkąta i kwadratu w three.js (kod) !!!!
 
